@@ -25,7 +25,7 @@
 
 </head>
 
-<body onload="startTime()">
+<body onload="startTime(); Time()">
     <header>
         <div class="menu">
             <div id="mySidenav" class="sidenav">
@@ -36,7 +36,9 @@
                 </ul>
                 <ul class="listTow">
                     <li><a href="">Local time</a></li>
-                    <li><span class="yearMenu" id="txt"></span></li>
+                    <div class="yearMenu">
+                        <span id="tim"></span>
+                    </div>
                 </ul>
             </div>
 
@@ -55,7 +57,9 @@
             <div class="co">
                 <div id="clock">
                     <p>Local time</p>
-                    <p id="txt"></p>
+                    <div id="time">
+                        <span id="txt"></span>
+                    </div>
                 </div>
 
 
@@ -276,7 +280,26 @@
 
 
 
+<script>
+        function Time() {
+            var today = new Date();
+            var ha = today.getHours();
+            var ma = today.getMinutes();
+            var sa = today.getSeconds();
+            ma = cTime(ma);
+            sa = cTime(sa);
+            document.getElementById('tim').innerHTML =
+                ha + ":" + ma;
+            var t = setTimeout(Time, 500);
+        }
 
+        function cTime(i) {
+            if (i < 10) {
+                i = "0" + i
+            }; // add zero in front of numbers < 10
+            return i;
+        }
+    </script>
 
     <script>
         function startTime() {
