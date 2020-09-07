@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@700&family=Mulish:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #F1F1F1;
+  --accent-color: #1f1f1f;
+  --main-font: 'Cormorant Unicase', serif;
+  --accent-font: 'Mulish', sans-serif;
+}
+
+.dark-mode {
+  --bg-color: #1f1f1f;
+  --accent-color: #F1F1F1;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--accent-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+/*******************************************************************************************/
+/*******************************************************************************************/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 75vh;
+  background-color: transparent;
+}
+
+header .heading {
+  width: 100%;
+  margin-bottom: 1rem;
+  font-family: var(--main-font);
+  font-size: 120px;
+  text-align: center;
+  line-height: 100%;
+}
+
+header .sm-heading {
+  width: 100%;
+  font-family: var(--main-font);
+  font-size: 27px;
+  text-align: center;
+  opacity: .7;
+}
+
+/*******************************************************************************************/
+/*******************************************************************************************/
+section {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+section article {
+  padding: 0px 80px 200px 80px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 34%;
+  height: 100vh;
+}
+
+section article .co {
+  margin-top: 1rem;
+}
+
+section article #time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: var(--main-font);
+  font-size: 3.5rem;
+  letter-spacing: 8px;
+  font-weight: bold;
+}
+
+section article .year {
+  margin-top: 2rem;
+}
+
+section article p {
+  line-height: 100%;
+  font-family: var(--accent-font);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+section article p.time {
+  font-family: var(--main-font);
+  font-size: 3.5rem;
+  letter-spacing: 8px;
+  font-weight: bold;
+}
+
+section article .span {
+  margin-top: 2rem;
+  border-bottom: 2px solid var(--accent-color);
+  width: 60%;
+  color: var(--accent-color);
+}
+
+section article .contactList {
+  margin-top: 2rem;
+}
+
+section article .contactList ul li {
+  font-family: var(--accent-font);
+  font-size: .8rem;
+  font-weight: bold;
+  line-height: 200%;
+}
+
+section article img {
+  margin-top: 2rem;
+  width: 60%;
+}
+
+section main {
+  width: 66%;
+  padding: 1rem 100px 150px 0;
+}
+
+section main p.aboutMe {
+  width: 80%;
+  line-height: 150%;
+  font-family: var(--main-font);
+  font-size: 1.5rem;
+}
+
+section main .work,
+section main .skills {
+  margin: 10rem 0 10rem 0;
+  width: 80%;
+}
+
+section main .work .title,
+section main .skills .title {
+  font-family: var(--main-font);
+  font-size: 45px;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  text-transform: capitalize;
+}
+
+section main .work .sm-title,
+section main .skills .sm-title {
+  font-family: var(--accent-font);
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: .8rem;
+}
+
+section main .work .xsm-title,
+section main .skills .xsm-title {
+  font-family: var(--accent-font);
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+section main .work .rs,
+section main .skills .rs {
+  font-family: var(--accent-font);
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+section main .work p,
+section main .skills p {
+  font-family: var(--accent-font);
+  font-size: 1.2rem;
+}
+
+section main .work ul li,
+section main .skills ul li {
+  font-family: var(--accent-font);
+  font-size: 1.1rem;
+  margin: 2rem 0 .5rem 2rem;
+  line-height: 150%;
+}
+
+/*******************************************************************************************/
+/*******************************************************************************************/
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 200px;
+  padding-bottom: 150px;
+}
+
+.slider .glide__track {
+  width: 66% !important;
+  float: right;
+}
+
+.slider .glide__slide {
+  height: 450px !important;
+  overflow: hidden;
+}
+
+.slider img {
+  width: 100%;
+}
+
+.slider .glide__arrows {
+  margin-left: 4rem !important;
+}
+
+.slider .prev,
+.slider .next {
+  background-color: transparent;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border-color: var(--accent-color);
+  border-width: 2px;
+  margin-top: 10rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.slider .material-icons {
+  font-size: 2rem !important;
+  color: var(--accent-color);
+}
+
+/*******************************************************************************************/
+/*******************************************************************************************/
+footer {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+footer .footer {
+  width: 66%;
+  padding: 5rem 100px 150px 0;
+  float: right;
+}
+
+footer .footer .title {
+  font-family: var(--main-font);
+  font-size: 45px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-transform: capitalize;
+}
+
+footer .footer .certeficated {
+  margin-top: 5rem;
+}
+
+footer .footer .certeficated .sm-title {
+  font-family: var(--accent-font);
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-bottom: .5rem;
+}
+
+footer .footer .certeficated .xsm-title {
+  font-family: var(--accent-font);
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+footer .footer p {
+  font-family: var(--accent-font);
+  font-size: 1.2rem;
+  width: 80%;
+  line-height: 200%;
+}
+
+footer .dark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 160%;
+  left: 90%;
+  width: 50px;
+  height: 50px;
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+footer .dark .material-icons {
+  font-size: 1.5rem !important;
+  color: var(--bg-color);
+}
+
+/*******************************************************************************************/
+/*******************************************************************************************/
+/*# sourceMappingURL=main.css.map */

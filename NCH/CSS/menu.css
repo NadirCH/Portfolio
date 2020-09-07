@@ -1,0 +1,75 @@
+:root {
+    --white-color: #f1f1f1;
+    --dark-color: #1f1f1f;
+}
+
+.dark-menu {
+    --white-color: ##1f1f1f;
+    --dark-color: #f1f1f1;
+}
+
+@media only screen and (max-width: 600px) {
+    .menuIcon {
+        font-size: 30px;
+        cursor: pointer;
+        color: var(--dark-color);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+    }
+    .sidenav {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        background-color: var(--dark-color);
+        overflow-x: hidden;
+        transition: 1s;
+        padding-top: 100px;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        color: var(--white-color);
+        top: 6.5%;
+        right: 5%;
+        font-size: 35px;
+        margin-bottom: 10rem;
+        cursor: pointer;
+    }
+    .listOne li a,
+    .listTow li a {
+        color: var(--white-color) !important;
+        font-family: 'Mulish', sans-serif;
+        font-size: 1.1rem;
+    }
+    .listOne {
+        margin-left: 3rem;
+        margin-top: 4rem;
+        line-height: 150%;
+        margin-bottom: 10rem;
+    }
+    .listTow {
+        margin-left: 3rem;
+        line-height: 200%;
+    }
+    .yearMenu {
+        color: var(--white-color);
+        font-size: 80px !important;
+        line-height: 100%;
+        font-family: 'Cormorant Unicase', serif;
+        letter-spacing: 8px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .menu {
+        display: none;
+    }
+    .sidenav {
+        display: none;
+    }
+}

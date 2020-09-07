@@ -1,0 +1,464 @@
+@media only screen and (max-width: 1300px) and (min-width: 900px) {
+  .slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 200px;
+    padding-bottom: 150px;
+  }
+  .slider .glide__track {
+    width: 66% !important;
+    float: right;
+  }
+  .slider .glide__slide {
+    height: 450px !important;
+    overflow: hidden;
+  }
+  .slider img {
+    width: 100%;
+  }
+  .slider .glide__arrows {
+    margin-left: 4rem !important;
+  }
+  .slider .prev,
+  .slider .next {
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-color: var(--accent-color);
+    border-width: 2px;
+    margin-top: 10rem;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  .slider .material-icons {
+    font-size: 1.4rem !important;
+    color: var(--accent-color);
+  }
+  footer {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+  }
+  footer .footer {
+    width: 66%;
+    padding: 5rem 100px 150px 0;
+    float: right;
+  }
+  footer .footer .title {
+    font-family: var(--main-font);
+    font-size: 45px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-transform: capitalize;
+  }
+  footer .footer .certeficated {
+    margin-top: 5rem;
+  }
+  footer .footer .certeficated .sm-title {
+    font-family: var(--accent-font);
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+  }
+  footer .footer .certeficated .xsm-title {
+    font-family: var(--accent-font);
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+  }
+  footer .footer p {
+    font-family: var(--accent-font);
+    font-size: 1.2rem;
+    width: 80%;
+    line-height: 200%;
+  }
+  footer .dark {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    top: 180%;
+    left: 90%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent-color);
+    cursor: pointer;
+  }
+  footer .dark .material-icons {
+    font-size: 1.5rem !important;
+    color: var(--bg-color);
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+  header .heading {
+    font-size: 70px;
+  }
+  header .sm-heading {
+    font-size: 17px;
+  }
+  section {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section article {
+    width: 40%;
+    padding: 20px 0px 200px 40px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    min-height: 100vh;
+  }
+  section article .co {
+    margin-top: 1rem;
+    height: 100%;
+  }
+  section article #time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: var(--main-font);
+    font-size: 3rem;
+    letter-spacing: 8px;
+    font-weight: bold;
+  }
+  section article .year {
+    margin-top: 2rem;
+  }
+  section article p {
+    line-height: 100%;
+    font-family: var(--accent-font);
+    font-size: .7rem;
+    font-weight: bold;
+  }
+  section article p.time {
+    font-family: var(--main-font);
+    font-size: 3rem;
+    letter-spacing: 8px;
+    font-weight: bold;
+  }
+  section article .span {
+    margin-top: 2rem;
+    width: 55%;
+  }
+  section article .contactList {
+    margin-top: 2rem;
+  }
+  section article .contactList ul li {
+    font-family: var(--accent-font);
+    font-size: .6rem;
+    font-weight: bold;
+    line-height: 200%;
+  }
+  section article img {
+    margin-top: 2rem;
+    width: 55%;
+  }
+  section main {
+    width: 60%;
+    padding: 1rem 0px 50px 0;
+  }
+  section main p.aboutMe {
+    width: 90%;
+    line-height: 150%;
+    font-family: var(--main-font);
+    font-size: 1.1rem;
+  }
+  section main .work,
+  section main .skills {
+    margin: 10rem 0rem 10rem 0;
+    width: 80%;
+  }
+  section main .work .title,
+  section main .skills .title {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+  }
+  section main .work .sm-title,
+  section main .skills .sm-title {
+    font-size: 1.2rem;
+    margin-bottom: .8rem;
+  }
+  section main .work .xsm-title,
+  section main .skills .xsm-title {
+    font-size: .9rem;
+    margin-bottom: 2.2rem;
+  }
+  section main .work .rs,
+  section main .skills .rs {
+    font-size: 1rem;
+  }
+  section main .work p,
+  section main .skills p {
+    font-size: .8rem;
+  }
+  section main .work ul li,
+  section main .skills ul li {
+    font-size: .8rem;
+    margin: 2rem 0 .3rem 2rem;
+    line-height: 150%;
+  }
+  .slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    min-height: 70vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .slider .glide__track {
+    width: 98% !important;
+    float: right;
+  }
+  .slider .glide__slide {
+    height: 450px !important;
+    overflow: hidden;
+  }
+  .slider img {
+    width: 100%;
+  }
+  .slider .glide__arrows {
+    display: none;
+  }
+  footer {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    margin-top: 0rem;
+  }
+  footer .footer {
+    width: 80%;
+    padding: 5rem 100px 150px 0;
+    float: right;
+  }
+  footer .footer .title {
+    font-size: 1.5rem;
+    margin-bottom: .2rem;
+    margin-top: .2rem;
+  }
+  footer .footer .certeficated {
+    margin-top: 5rem;
+  }
+  footer .footer .certeficated .sm-title {
+    font-size: 1.2rem;
+    margin-bottom: .8rem;
+  }
+  footer .footer .certeficated .xsm-title {
+    font-size: .9rem;
+    margin-bottom: 2rem;
+  }
+  footer .footer p {
+    font-size: .8rem;
+    margin: 0rem 0 .3rem 2rem;
+    line-height: 200%;
+  }
+  footer .dark {
+    top: 120%;
+    left: 70%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent-color);
+    cursor: pointer;
+  }
+  footer .dark .material-icons {
+    font-size: 1.5rem !important;
+    color: var(--bg-color);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  header .heading {
+    width: 80%;
+    margin: 0 5rem .4rem 5rem;
+    font-size: 70px;
+    text-align: left;
+  }
+  header .sm-heading {
+    width: 80%;
+    margin: 0 5rem .4rem 5rem;
+    font-size: 14px;
+    text-align: left;
+  }
+  section {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  section article {
+    display: none;
+  }
+  section main {
+    width: 90%;
+    margin-left: 5rem;
+    padding: 1rem 40px 40px 0;
+    text-align: justify-all;
+  }
+  section main p.aboutMe {
+    width: 100%;
+    line-height: 150%;
+    font-family: var(--main-font);
+    font-size: 1rem;
+  }
+  section main .work,
+  section main .skills {
+    margin: 10rem 0 0rem 0;
+    width: 100%;
+  }
+  section main .work .title,
+  section main .skills .title {
+    font-family: var(--main-font);
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+  }
+  section main .work .sm-title,
+  section main .skills .sm-title {
+    font-family: var(--accent-font);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: .8rem;
+  }
+  section main .work .xsm-title,
+  section main .skills .xsm-title {
+    font-family: var(--accent-font);
+    font-size: .7rem;
+    margin-bottom: 2.5rem;
+  }
+  section main .work .rs,
+  section main .skills .rs {
+    font-family: var(--accent-font);
+    font-size: 1rem;
+    font-weight: 900;
+  }
+  section main .work p,
+  section main .skills p {
+    font-family: var(--accent-font);
+    font-size: .9rem;
+  }
+  section main .work ul li,
+  section main .skills ul li {
+    font-family: var(--accent-font);
+    font-size: .9rem;
+    margin: 2rem 0 .5rem 2rem;
+    line-height: 150%;
+  }
+  .slider {
+    display: block;
+    width: 100%;
+    margin-top: 10rem;
+    margin-bottom: 0rem;
+    min-height: 30vh;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .slider .glide__track {
+    width: 98% !important;
+  }
+  .slider .glide__slide {
+    height: 200px !important;
+    overflow: hidden;
+  }
+  .slider img {
+    width: 100%;
+    height: auto;
+  }
+  .slider .glide__arrows {
+    display: none !important;
+  }
+  footer {
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: justify-all;
+  }
+  footer .footer {
+    width: 800px;
+    margin-left: 5rem;
+    float: left;
+  }
+  footer .footer .title {
+    font-family: var(--main-font);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  footer .footer .certeficated {
+    margin-top: 5rem;
+  }
+  footer .footer .certeficated .sm-title {
+    font-family: var(--accent-font);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: .8rem;
+  }
+  footer .footer .certeficated .xsm-title {
+    font-family: var(--accent-font);
+    font-size: .7rem;
+    margin-bottom: 2.5rem;
+  }
+  footer .footer p {
+    font-family: var(--accent-font);
+    font-size: .9rem;
+    line-height: 200%;
+    width: 100%;
+  }
+  footer .dark {
+    position: absolute;
+    top: 90%;
+    left: 80%;
+    width: 30px;
+    height: 30px;
+    background-color: var(--accent-color);
+    cursor: pointer;
+  }
+  footer .dark .material-icons {
+    font-size: 1.1rem !important;
+    color: var(--bg-color);
+  }
+}
+/*# sourceMappingURL=mediaQ.css.map */
