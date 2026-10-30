@@ -20,16 +20,16 @@ export default function App() {
   const mainRef = useRef(null);
   const page1Ref = useRef(null);
 
-  // Initialize Lightweight, Snappy Lenis Smooth Scrolling
+  // Initialize Balanced, Silky Lenis Smooth Scrolling
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 0.8,
+      duration: 1.15,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       orientation: "vertical",
       gestureOrientation: "vertical",
       smoothWheel: true,
-      wheelMultiplier: 1.15,
-      touchMultiplier: 1.5,
+      wheelMultiplier: 1.0,
+      touchMultiplier: 1.2,
     });
 
     lenis.on("scroll", ScrollTrigger.update);
@@ -51,15 +51,15 @@ export default function App() {
   const handleLoaderComplete = () => {
     setIsLoaded(true);
 
-    // Snappy entrance reveal for Page 1
+    // Smooth, graceful entrance reveal for Page 1
     if (page1Ref.current) {
       gsap.fromTo(
         page1Ref.current,
-        { y: 150, opacity: 0 },
+        { y: 120, opacity: 0 },
         {
           y: 0,
           opacity: 1,
-          duration: 0.6,
+          duration: 0.9,
           ease: "power3.out",
         }
       );
@@ -67,8 +67,8 @@ export default function App() {
 
     gsap.fromTo(
       "#nav",
-      { opacity: 0, y: -15 },
-      { opacity: 1, y: 0, duration: 0.5, ease: "power2.out", delay: 0.1 }
+      { opacity: 0, y: -20 },
+      { opacity: 1, y: 0, duration: 0.7, ease: "power2.out", delay: 0.15 }
     );
   };
 

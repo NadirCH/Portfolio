@@ -31,43 +31,36 @@ export default function Loader({ onComplete }) {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline();
 
-      // Snappy entrance for text lines
+      // Elegant, measured entrance for text lines
       tl.from(".loader-line h1", {
         y: 120,
-        stagger: 0.12,
-        duration: 0.45,
+        stagger: 0.14,
+        duration: 0.65,
         ease: "power3.out",
         delay: 0.1,
       });
 
-      // Rapid, energetic counter (reaches 100 in ~0.8s)
-      tl.from(
-        "#line1-part1",
+      // Smooth, beautifully eased counter to 100 (~2.2s)
+      const counterObj = { value: 0 };
+      tl.to(
+        counterObj,
         {
-          opacity: 0,
-          duration: 0.25,
-          onStart: () => {
-            let count = 0;
-            const interval = setInterval(() => {
-              if (count < 100) {
-                count += 2;
-                if (count > 100) count = 100;
-                setCounter(count);
-              } else {
-                clearInterval(interval);
-              }
-            }, 14);
+          value: 100,
+          duration: 2.2,
+          ease: "power2.out",
+          onUpdate: () => {
+            setCounter(Math.floor(counterObj.value));
           },
         },
-        "-=0.1"
+        "-=0.3"
       );
 
-      // Auto fade out fast once counted (~1s total)
+      // Smooth fade-out after count completes
       tl.to(loaderRef.current, {
         opacity: 0,
-        duration: 0.4,
+        duration: 0.6,
         ease: "power2.inOut",
-        delay: 0.95,
+        delay: 0.2,
         onComplete: finishLoader,
       });
     }, loaderRef);

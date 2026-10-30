@@ -788,13 +788,13 @@ body {
   color: transparent;
   display: inline-block;
   margin-right: 25px;
-  animation: marqueeAnime 13s linear infinite;
+  animation: marqueeAnime 24s linear infinite;
   will-change: transform;
   flex-shrink: 0;
 }
 
 .marquee-elem.reverse h1 {
-  animation: marqueeAnimeReverse 13s linear infinite;
+  animation: marqueeAnimeReverse 24s linear infinite;
 }
 
 @keyframes marqueeAnime {

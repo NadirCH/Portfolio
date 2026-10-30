@@ -64,12 +64,12 @@ export default function Hero({ isLoaded }) {
     const ctx = gsap.context(() => {
       gsap.fromTo(
         "#hero1 h1, #hero2 h1, #hero3 h2, #hero4 h1",
-        { y: 50, opacity: 0 },
+        { y: 60, opacity: 0 },
         {
           y: 0,
           opacity: 1,
-          stagger: 0.08,
-          duration: 0.7,
+          stagger: 0.1,
+          duration: 0.9,
           ease: "power3.out",
           clearProps: "transform",
         }
@@ -81,9 +81,9 @@ export default function Hero({ isLoaded }) {
         {
           opacity: 1,
           x: 0,
-          duration: 0.5,
+          duration: 0.65,
           ease: "power3.out",
-          delay: 0.2,
+          delay: 0.25,
           clearProps: "transform",
         }
       );
@@ -94,9 +94,9 @@ export default function Hero({ isLoaded }) {
         {
           opacity: 1,
           y: 0,
-          duration: 0.6,
+          duration: 0.8,
           ease: "power3.out",
-          delay: 0.35,
+          delay: 0.4,
           clearProps: "transform",
         }
       );
